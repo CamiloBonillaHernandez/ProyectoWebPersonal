@@ -1,0 +1,152 @@
+body {
+    display: grid;
+    grid-template-areas: "nav article" "nav article" "footer footer";
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns: 80px 1fr;
+    grid-row-gap: 0.5px;
+    grid-column-gap: 0.5px;
+    height: 100vh;
+    margin: 0;
+}
+
+footer{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background:lightslategrey;
+}
+
+.pageFooter {
+    grid-area: footer;
+    text-align: center;
+}
+
+.mainArticle {
+    grid-area: article;
+    background-image: url('resources/n1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #464646;
+}
+
+.mainNav {
+    background: lightgray;
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    grid-area: nav;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.logo {
+    padding-left: 15%;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.tele {
+    padding-top: 45%;
+    padding-left: 30%;
+}
+
+.menu {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-left: 15%;
+}
+.menu a{
+    text-decoration: none;
+}
+
+.social {
+    display: grid;
+    grid-auto-flow: row;
+    padding-left: 30%;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+.tele img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media all and (max-width: 610px) {
+    body {
+        grid-template-areas: "nav" "article" "footer";
+        grid-template-rows: 80px 1fr 70px;
+        grid-template-columns: 1fr;
+    }
+    .logo {
+        padding-left: 5%;
+    }
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    .mainNav {
+        padding-left: 10%;
+        padding-right: 15%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        grid-area: nav;
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .tele {
+        padding-top: 10%;
+    }
+    .social {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 2px;
+        padding-top: 5%;
+    }
+    .menu {
+        padding-top: 10%;
+        padding-left: 20%;
+    }
+}
+
+.IJourneys h1{
+
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    color: aqua;
+}
+.IKnow h1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    color: aqua;
+}
+.IDreams h1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    color: aqua;
+}
+.IHobbies h1{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 50px;
+    color: aqua;
+}
